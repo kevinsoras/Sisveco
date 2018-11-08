@@ -1,0 +1,38 @@
+package pe.edu.upeu.sprintemplate.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Usuario")
+public class producto {
+@Id
+@GeneratedValue(strategy=GenerationType.IDENTITY)
+@Column(name="idproducto")
+private int idproducto;
+@Column(name="idcategoria")
+private int idcategoria;
+@Column(name="nombre")
+private String nombre;
+@Column(name="precio")
+private double precio;
+@Column(name="cantidad")
+private int cantidad;
+@Column(name="codigo")
+private int codigo;
+@Column(name="estado")
+private String estado;
+
+
+public producto() {
+	super();
+}
+
+
+
+
+}

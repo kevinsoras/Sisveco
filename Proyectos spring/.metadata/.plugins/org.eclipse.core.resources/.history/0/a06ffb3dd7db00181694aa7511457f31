@@ -1,0 +1,11 @@
+package pe.edu.upeu.sprintemplate.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+import pe.edu.upeu.sprintemplate.entity.Usuario;
+import pe.edu.upeu.sprintemplate.entity.producto;
+
+
+public interface productoRepository extends CrudRepository<producto, Integer> {
+
+}
